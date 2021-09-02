@@ -14,5 +14,4 @@ Design for failure
 Keep it logically awesome
 Do it for the lulz
 You only live once
-
-May the force be with you
+May the Force be with you
