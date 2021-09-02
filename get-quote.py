@@ -1,12 +1,18 @@
-from random import choice
+from random import choices
 
 def primary():
-
+    f = open("quotes.txt", 'a')
+    new_quote = input("For the sake of maintenance, you have to type a new quote")
+    f.write(f"\n{new_quote}")
+    f.close()
     f = open("quotes.txt")
     quotes = f.readlines()
     f.close()
 
-    print(choice(quotes))
+    quantity = int(input('How many quotes do you want to see? '))
+    rndm_choices = choices(quotes, k=quantity)
+    for q in rndm_choices:
+        print(q.strip())
 
 if __name__== "__main__":
   primary()
