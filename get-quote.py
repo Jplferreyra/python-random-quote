@@ -2,8 +2,8 @@ from random import choices
 
 def primary():
     f = open("quotes.txt", 'a')
-    new_quote = input("For the sake of maintenance, you have to type a new quote")
-    f.write(f"\n{new_quote}")
+    new_quote = input("For the sake of maintenance, you have to type a new quote: ")
+    f.write(f"{new_quote}\n")
     f.close()
     f = open("quotes.txt")
     quotes = f.readlines()
